@@ -23,7 +23,7 @@ após o clone, instalar dependência com composer
 
 > npm run build
 
-O sistema possui migrations conforme solicitado, e também adicionei seeders para pré cadastrar 50 protudores e o usuário admin padrão.
+O sistema possui migrations conforme solicitado, e também adicionei seeders para pré cadastrar 50 produtores, as cidades e estados e o usuário admin padrão.
 
 > php artisan migrate
 
