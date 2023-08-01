@@ -33,9 +33,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin User',
         ]);
 
+
         // Check if exists any city
         if(!City::first()){
-            Artisan::call('db:seed --class="Guiliredu\BrazilianCityMigrationSeed\Database\Seeds\DatabaseSeeder"');
+            $this->call(\Guiliredu\BrazilianCityMigrationSeed\Database\Seeds\DatabaseSeeder::class);
         }
 
         // Prepare Repositories
