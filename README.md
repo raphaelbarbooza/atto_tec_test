@@ -25,7 +25,7 @@ após o clone, instalar dependência com composer
 
 Após configuração do .env
 
-> php artisan key>generate
+> php artisan key:generate
 
 > php artisan optimize
 
