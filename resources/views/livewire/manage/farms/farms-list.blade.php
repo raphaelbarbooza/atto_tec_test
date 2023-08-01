@@ -1,14 +1,14 @@
 <div>
     <div class="fs-5 text-muted border-bottom pb-2 mb-2 d-flex align-items-center">
         <div>
-            Registered Farms:
+            {{__('main.farms.title')}}:
         </div>
         <button class="btn btn-outline-primary ms-auto" wire:click.prevent="requestCreate">
             <i class="fas fa-plus"></i>
         </button>
     </div>
     <div>
-        <input type="text" class="form-control" placeholder="Filter..." wire:model.debounce.250ms="filter"/>
+        <input type="text" class="form-control" placeholder="{{__('main.farms.filters.search')}}..." wire:model.debounce.250ms="filter"/>
 
         <ul class="list-group mt-2">
             @foreach($farms as $farm)
