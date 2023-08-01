@@ -23,6 +23,12 @@ após o clone, instalar dependência com composer
 
 > npm run build
 
+Após configuração do .env
+
+> php artisan key>generate
+
+> php artisan optimize
+
 O sistema possui migrations conforme solicitado, e também adicionei seeders para pré cadastrar 50 produtores, as cidades e estados e o usuário admin padrão.
 
 > php artisan migrate
