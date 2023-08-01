@@ -66,7 +66,7 @@ window.addEventListener('vanilla', event => {
 
 // Open a Bootstrap modal
 window.addEventListener('openModal', event => {
-    bootstrap.Modal.getOrCreateInstance('#'+event.detail.modalId).show();
+    window.bootstrap.Modal.getOrCreateInstance('#'+event.detail.modalId).show();
 });
 
 // Close a Bootstrap modal
@@ -76,7 +76,7 @@ window.addEventListener('closeModal', event => {
 
 // Mask a element
 window.addEventListener('mask', event => {
-    VMasker(document.querySelector(event.detail.selector)).maskPattern(event.detail.pattern);
+    window.VMasker(document.querySelector(event.detail.selector)).maskPattern(event.detail.pattern);
 });
 
 
