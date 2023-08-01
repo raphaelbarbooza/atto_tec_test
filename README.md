@@ -17,14 +17,14 @@ após o clone, instalar dependência com composer
 
 (Algumas libs usadas tem o marcador de versão do PHP de uma interpretação antiga do composer, fazendo com que considerem o php 8.1 inválido para ^7.4, o que é bizarro hehe)
 
-composer install --ignore-platform-reqs   
-npm install
-npm run build
+> composer install --ignore-platform-reqs   
+> npm install
+> npm run build
 
 O sistema possui migrations conforme solicitado, e também adicionei seeders para pré cadastrar 50 protudores e o usuário admin padrão.
 
-php artisan migrate
-php artisan db:seed
+> php artisan migrate
+> php artisan db:seed
 
 ## Acesso
 
