@@ -12,7 +12,7 @@ class ProducerInfo extends Component
 
     protected $listeners = [
         'global__producer_removed' => 'returnToList', // If a producer is removed, just return to the list
-        'global__producer_update' => 'render', // If a producer is update, re-render
+        'global__producer_updated' => 'render', // If a producer is update, re-render
     ];
 
     public function mount($producerId){
