@@ -2,6 +2,11 @@
 
 return [
 
+    'home' => [
+        'total_producers' => 'Registered Producers',
+        'total_farms' => 'Registered Farms',
+        'total_plots' => 'Registered Plots'
+    ],
     'general' => [
         'loading' => 'loading',
         'home' => 'Home',

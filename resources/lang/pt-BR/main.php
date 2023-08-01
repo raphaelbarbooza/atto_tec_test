@@ -1,7 +1,11 @@
 <?php
 
 return [
-
+    'home' => [
+        'total_producers' => 'Produtores Registrados',
+        'total_farms' => 'Fazendas Registradas',
+        'total_plots' => 'Talhões Registrados'
+    ],
     'general' => [
         'loading' => 'carregando',
         'home' => 'Início',
