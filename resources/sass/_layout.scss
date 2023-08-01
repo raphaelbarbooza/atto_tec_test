@@ -1,0 +1,185 @@
+// Resets
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+// Layout only for Auth Pages
+
+#auth-page{
+
+    header{
+        background-image: url('../images/layout/login-top-bg.png');
+        min-height: 240px;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .auth-content{
+
+        .logo{
+            max-width: 180px;
+            height: auto;
+        }
+
+    }
+}
+
+// Default theme
+
+#default-theme{
+    // Animated linear background
+    background: linear-gradient(-45deg, #24435F, #1C344A, #212525, #24435F);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+
+    aside{
+
+        width: 250px;
+
+        .logo{
+            width: 100%;
+            max-width: 100px;
+            height: 100px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        nav{
+            width: 100%;
+
+            ul{
+                margin: 0px;
+                padding: 0px;
+
+                li{
+                    margin-top: 7px;
+                    padding: 4px 5px;
+
+                    list-style: none;
+                    transition: all 0.3s ease;
+
+                    border-radius: 6px;
+
+                    .icon{
+                        width: 35px;
+                        font-size: 18px;
+                    }
+                    .menu{
+                        font-size: 16px;
+                    }
+
+                    &:hover{
+                        background-color: rgba(0,0,0,.2);
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    main{
+
+        .wrapper{
+            background-color: #FFF;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+            header{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+
+            }
+        }
+
+    }
+
+    &.dark-mode{
+
+        aside{
+
+            .logo{
+                background-image: url('../images/layout/logo-white-01.png');
+            }
+
+            nav{
+
+                ul{
+
+                    li{
+                        color: #FFF;
+                    }
+
+                }
+
+            }
+
+            #language-switcher{
+                .dropdown{
+                    button{
+                        background-color: transparent !important;
+                        color: #FFF !important;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+// Overlays
+
+#language-loading-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5000;
+    background-color: rgba(255,255,255,0.8);
+    width: 100vw;
+    height: 100vh;
+    filter:blur(40px);
+}
+
+.loading-alert{
+    position: fixed;
+    z-index: 5000;
+    background-color: #358B34;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px 0px;
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+
+}
+// Animations
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
