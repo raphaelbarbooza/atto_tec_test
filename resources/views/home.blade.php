@@ -14,7 +14,7 @@
                     </div>
                     <div class="ms-3">
                         <div class="fs-5 text-muted">
-                            {{__('main.home.total_producers')}})
+                            {{__('main.home.total_producers')}}
                         </div>
                         <div class="fs-3">
                             {{\App\Services\ProducerServices::build()->getTotalCount()}}
@@ -30,7 +30,7 @@
                     </div>
                     <div class="ms-3">
                         <div class="fs-5 text-muted">
-                            {{__('main.home.total_farms')}})
+                            {{__('main.home.total_farms')}}
                         </div>
                         <div class="fs-3">
                             {{\App\Services\FarmServices::build()->getTotalFarmCount()}}
@@ -46,7 +46,7 @@
                     </div>
                     <div class="ms-3">
                         <div class="fs-5 text-muted">
-                            {{__('main.home.total_plots')}})
+                            {{__('main.home.total_plots')}}
                         </div>
                         <div class="fs-3">
                             {{\App\Services\FarmServices::build()->getTotalPlotCount()}}
