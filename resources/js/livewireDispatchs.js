@@ -76,7 +76,8 @@ window.addEventListener('closeModal', event => {
 
 // Mask a element
 window.addEventListener('mask', event => {
-    window.VMasker(document.querySelector(event.detail.selector)).maskPattern(event.detail.pattern);
+    let el = document.querySelector(event.detail.selector);
+    VMasker.default(el).maskPattern(event.detail.pattern);
 });
 
 
