@@ -73,6 +73,12 @@
                         </p>
 
                         <p>
+                            Como fiz monolítico, para Front End estou utilizando o Livewire que nos trás a possibilidade de usar componentes reativos direto em controladores no Laravel. <br/>
+                            O padrão utilizado é MVC, como estamos componentizando com Livewire, os controllers passam a existir para cada componente separadamente, no namespace App\Http\Livewire,
+                            enquanto o visual dos componetes são views do blade em views\livewire.
+                        </p>
+
+                        <p>
                             Usei Repository para fazer o gerenciamento de todas as transações Modelos <> Banco de Dados. <br/>
                             O uso de Services pode estar exagerado para o comum do padrão, mas optei usar Services para fazer o gerenciamento das entidades. <br/>
                             O ProducersServices segue base SOLID aonde o serviço atende apenas a uma unica entidade / sentido. <br/>
