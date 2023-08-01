@@ -8,7 +8,7 @@ use Livewire\Component;
 class ProducerInfo extends Component
 {
 
-    protected $producer;
+    public $producer;
 
     protected $listeners = [
         'global__producer_removed' => 'returnToList', // If a producer is removed, just return to the list
